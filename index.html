@@ -458,11 +458,7 @@
   <footer>UC Shop · Ответы оператора появляются прямо в чате</footer>
 
   <script>
-    // Если открыто через server.py — API на том же origin
-    // Если просто файл — пробуем localhost:8080
-    const API = (location.protocol === 'http:' || location.protocol === 'https:')
-      ? ''
-      : 'http://localhost:8080';
+const API = 'https://uc-shop-0b55.onrender.com'
 
     let ticketId = null;
     let userName = '';
