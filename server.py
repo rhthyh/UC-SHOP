@@ -17,7 +17,7 @@ import requests
 # ============== НАСТРОЙКИ ==============
 BOT_TOKEN = "9296789562:AAE2HtIHRyIjT9jDauFxkEh0f_hPTVT0WYk"
 ADMIN_CHAT_ID = 7999123043
-PORT = 8080
+PORT = int(os.environ.get("PORT", 8080))
 DATA_FILE = "tickets.json"
 # =======================================
 
